@@ -1,0 +1,19 @@
+doctype
+.uk-panel.uk-panel-box.uk-panel-box-secondary
+  h1.uk-panel-header
+    span(name='indicator') Loading
+    span &nbsp;
+    small
+      i.uk-icon-question-circle.uk-text-warning(data-uk-toggle="{target:'#indicator-description'}" data-uk-tooltip title="指標定義")
+    span &nbsp;
+    small
+      i.uk-icon-info-circle.uk-text-warning(data-uk-toggle="{target:'#indicator-methods'}" data-uk-tooltip title="指標分析")
+  #indicator-description.uk-hidden.uk-alert.uk-animation-fade(data-uk-alert='')
+    a.uk-alert-close.uk-close(href='')
+    p(name='description') Loading
+  #indicator-methods.uk-hidden.uk-alert.uk-animation-fade(data-uk-alert='')
+    a.uk-alert-close.uk-close(href='')
+    dl.uk-description-list.uk-description-list-horizontal
+
+//- .uk-panel.uk-panel-box.uk-form.uk-panel-box-secondary
+//-   select.uk-width-1-1(name='mode_id')

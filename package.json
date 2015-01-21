@@ -1,0 +1,26 @@
+{
+  "name": "your-app",
+  "description": "Description",
+  "author": "Your Name",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "deploy": "git pull && bower install --allow-root && npm install && brunch b -P",
+    "prestart": "bower install && npm install",
+    "start": "brunch watch --server -p 3334",
+    "test": "brunch test"
+  },
+  "dependencies": {
+    "javascript-brunch": "*",
+    "css-brunch": "*",
+    "uglify-js-brunch": "*",
+    "clean-css-brunch": "*",
+    "auto-reload-brunch": "*",
+    "coffee-script-brunch": "*",
+    "jade-brunch": "*",
+    "digest-brunch": "*"
+  }
+}

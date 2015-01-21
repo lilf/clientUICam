@@ -1,0 +1,25 @@
+.login-panel.uk-container-center.uk-margin-large-top
+  .login-panel-logo.uk-text-center
+    img(src= 'images/cam_logo_1.png' width="300")
+  hr
+  form.uk-form.uk-form-horizontal.user-panel
+    fieldset
+      .uk-form-row.text-center
+        label.uk-form-label
+          b 用戶名：
+        input(placeholder="請輸入用戶名", type="text", name="email")
+      .uk-form-row.text-center
+        label.uk-form-label
+          b 密碼：
+        input(placeholder="請輸入密碼", type="password", name="password")
+      //- .uk-form-row
+      //-   input(type="checkbox")
+      //-   label
+      //-     | 記住帳號
+      .uk-form-row.uk-text-center.uk-margin-large-top
+        button.uk-button.login
+          i.uk-icon-check
+          | 登錄
+        button.uk-button.reset
+          i.uk-icon-undo
+          | 重置

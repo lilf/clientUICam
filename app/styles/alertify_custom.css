@@ -1,0 +1,31 @@
+.alertify * {
+  text-shadow: none;
+  box-shadow: none;
+}
+.alertify {
+  border:2px solid #fabd48;
+  border-radius: 5px;
+}
+.alertify-dialog {
+
+}
+.alertify-button {
+  border-color: #fe5842;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  background-color: #FFB8AE;
+  /* background-color: #fe5842; */
+  cursor: pointer;
+}
+.alertify-button:hover {
+  border-color: #fe5842;
+  background-color: #fe5842;
+  /*background-color: #FF2306;*/
+}
+.alertify-button .alertify-button-cancel {
+  border-color: #23A323;
+  background-color: #23A323;
+}
+.alertify-button .alertify-button-ok {}

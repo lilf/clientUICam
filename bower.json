@@ -1,0 +1,78 @@
+{
+  "name": "your-app",
+  "version": "0.6.0",
+  "main": "public/app.js",
+  "dependencies": {
+    "dev_uikit": "~2.8.0",
+    "backbone.node": "~0.4.3",
+    "backbone.oauth2": "~0.1.8",
+    "form2js": "*",
+    "selectize": "~0.10.1",
+    "i18next": "~1.7.3",
+    "moment": "~2.7.0",
+    "backbone-forms": "~0.14.0",
+    "numbers.js": "*",
+    "underscore.string": "~2.3.3",
+    "echarts": "~2.0.4",
+    "alertifyjs": "~0.3.12",
+    "classlist": "~2014.7.23",
+    "xdomain": "~0.6.15",
+    "datatables": "~1.10.4",
+    "datatables-tabletools": "~2.2.3"
+  },
+  "overrides": {
+    "dev_uikit": {
+      "main": [
+        "dist/css/uikit.almost-flat.css",
+        "dist/css/addons/uikit.almost-flat.addons.css",
+        "dist/js/uikit.js",
+        "dist/js/addons/autocomplete.js",
+        "dist/js/addons/datepicker.js",
+        "dist/js/addons/form-password.js",
+        "dist/js/addons/form-select.js",
+        "dist/js/addons/nestable.js",
+        "dist/js/addons/notify.js",
+        "dist/js/addons/pagination.js",
+        "dist/js/addons/search.js",
+        "dist/js/addons/sortable.js",
+        "dist/js/addons/sticky.js",
+        "dist/js/addons/timepicker.js",
+        "dist/js/addons/upload.js"
+      ],
+      "dependencies": {
+        "jquery": "*"
+      }
+    },
+    "form2js": {
+      "main": [
+        "src/form2js.js",
+        "src/jquery.toObject.js"
+      ]
+    },
+    "jquery": {
+      "main": "jquery.js"
+    },
+    "echarts": {
+      "main": [
+        "build/echarts-plain-original-map.js"
+      ]
+    },
+    "backbone-forms": {
+      "main": "distribution/backbone-forms.js"
+    },
+    "underscore.string": {
+      "main": [
+        "lib/underscore.string.js"
+      ],
+      "dependencies": {
+        "underscore": "*"
+      }
+    },
+    "alertifyjs": {
+      "main": [
+        "dist/js/alertify.js",
+        "dist/css/alertify.css"
+      ]
+    }
+  }
+}

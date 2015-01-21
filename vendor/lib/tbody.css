@@ -1,0 +1,79 @@
+.tbody-scroll table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.tbody-scroll thead
+   {
+    text-align:left;
+    display: table;
+    float: left;
+    width: 100%;
+}
+.tbody-scroll thead tr {
+    display: table-row;
+    width: 100%;
+}
+.tbody-scroll tbody {
+
+    display: block;
+    height: 240px;
+    overflow: auto;
+    float: left;
+    width: 100%;
+}
+.tbody-scroll tbody tr {
+    display: table;
+    width: 100%;
+}
+.tbody-scroll tbody tr {
+    height: 18px;
+}
+.tbody-scroll tbody td {
+    padding:6px 8px;
+}
+.tbody-scroll th, td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+.tbody-scroll th {
+    margin-left: -5px;
+}
+.tbody-scroll tr:after{   /* IE8 fix */
+    content: ".";
+    margin-left: -3px; /* to hide the content above tr */ /* not necessary if you are ok with 1px gap */
+    visibility: hidden;
+}
+
+.ers-table-1-2 th,
+.ers-table-1-2 td {
+width: 50% !important;
+}
+.ers-table-1-3 th,
+.ers-table-1-3 td {
+width: 33.333% !important;
+}
+.ers-table-1-4 th,
+.ers-table-1-4 td {
+width: 25% !important;
+}
+.ers-table-1-5 th,
+.ers-table-1-5 td {
+width: 20% !important;
+}
+.ers-table-1-6 th,
+.ers-table-1-6 td {
+width: 16.666% !important;
+}
+.ers-table-1-10 th,
+.ers-table-1-10 td {
+width: 10% !important;
+}
+/*#indicator-table>tbody>tr:nth-child(odd), #indicator-table>tbody>tr:nth-child(odd) {
+background-color: #FFF4F8;
+}
+
+#indicator-table>tbody>tr:hover,#indicator-table>tbody>tr:nth-child(odd):hover {
+    background-color: #d85b90!important;
+}*/

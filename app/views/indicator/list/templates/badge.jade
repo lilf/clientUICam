@@ -1,0 +1,37 @@
+.indicator-value-badge
+  each label in labels
+    - var labelName = jade.t(label.name)
+    - var labelText = jade.t(label.label)
+    - if (label.name === 'age' || label.name === 'gender')
+      .uk-badge.uk-float-left #{labelName}:#{labelText}
+    - else
+      .uk-badge.uk-float-left #{labelText}
+  small.indicator-value-date.uk-float-right(data-uk-tooltip, title="統計時間")
+    i.uk-icon-calendar
+    = date
+  .uk-clearfix
+
+.indicator-value-box
+  span.indicator-value(class = direction)= value
+  if gap
+    .ratio-box
+      span.ratiolabel
+        case rawdata.dateType
+          when 'year'
+            | 年
+          when 'quarter'
+            | 季
+          when 'month'
+            | 月
+        | 環比：
+      //- span last period
+      if direction == 'up'
+        .uk-icon-arrow-up
+      if direction == 'down'
+        .uk-icon-arrow-down
+      span.ratio-value= gap
+      if gapPercent
+        span.ratio-value= '(' + gapPercent + ')'
+
+//- span data source:
+.indicator-value-source(data-uk-tooltip, title="統計來源: #{source}")= source

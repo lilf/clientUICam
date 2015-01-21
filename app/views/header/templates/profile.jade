@@ -1,0 +1,36 @@
+doctype
+//- iframe(src=url, scrolling='no', frameborder='0', width='100%', height='450')
+form.uk-form.uk-form-horizontal.user-panel
+  fieldset
+    .uk-form-row.user-panel-title
+      h2
+        i.uk-icon-user
+        | 帳號管理
+    hr
+    .uk-form-row.text-center
+      label.uk-form-label
+        b 用戶名：
+      label.uk-form-label.user-email(style="width:350px")= email
+    .uk-form-row.text-center
+      label.uk-form-label
+        b 新密碼：
+      input(placeholder="請輸入新密碼", type="password", name="password")
+    .uk-form-row.text-center
+      label.uk-form-label
+        b 確認新密碼：
+      input(placeholder="請再次輸入新密碼", type="password", name="password2")
+      span &nbsp;
+      i.uk-icon-check.uk-text-success.uk-hidden
+      i.uk-icon-times.uk-text-danger.uk-hidden
+    .uk-form-row
+      label.uk-form-label
+        span.uk-text-success.result-status(style="display:none") 修改成功!
+        span.uk-text-danger.result-status(style="display:none") 修改失敗!
+    .uk-form-row.uk-text-center.uk-margin-large-top
+      button.uk-button.change-password
+        i.uk-icon-check
+        | 確認
+      button.uk-button.cancel.uk-modal-close
+        i.uk-icon-reply
+        | 取消
+

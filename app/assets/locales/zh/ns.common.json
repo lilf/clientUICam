@@ -1,0 +1,12 @@
+{
+	"app": {
+		"company": {
+		  "name": "我的公司"
+		}
+	},
+	"attr": {
+		"placeholder": "請填寫什麼東西吧",
+		"title": "翻譯了之後的title"	
+	},
+	"add": "添加"
+}

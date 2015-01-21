@@ -1,0 +1,40 @@
+- var f = isF ? '女性' : ''
+- var dateType2 = jade.t(dateType)
+dt
+  span #{f}數據分析
+dd(name='date-latest') &nbsp;
+dt - 最新值
+dd(name='value-latest')
+  span= valueLatest
+  span &nbsp;
+  span (#{dateLatest})
+
+if previousPeriodVariance && previousPeriodDifference
+  dt - #{dateType2}環比
+  dd
+    span(name='previous-period-difference')= previousPeriodDifference
+    span &nbsp;
+    span(name='previous-period-variance')  (#{previousPeriodVariance})
+if sexRatio
+  dt - 性別比
+  dd(name='sex-ratio')= sexRatio
+//- dt 歷史趨勢
+//- dd
+//-   span(name='min-date')= minDate
+//-   span(name='max-date')= maxDate
+if averageChange
+  dt - 平均變幅
+  dd(name='average-change')
+    span= averageChange
+    span &nbsp;
+    span (#{minDate} - #{maxDate})
+//- dt - 平均值
+//- dd(name='average')= average
+//- dt - 最小值
+//- dd
+//-   span(name='min-value')= minValue
+//-   span(name='min-value-date')= minValueDate
+//- dt - 最大值
+//- dd
+//-   span(name='max-value')= maxVlue
+//-   span(name='max-value-date')= maxVlueDate
